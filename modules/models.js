@@ -37,7 +37,7 @@ const models = [
     name: "80/20 Endurance",
     metric: Metric.LTHR,
     names: ["Zone 1", "Zone 2", "Zone X", "Zone 3", "Zone Y", "Zone 4", "Zone 5"],
-    ranges: [.82, .91, .96, 1.01, 1.03, 1.06],
+    ranges: [.82, .91, .95, 1.00, 1.02, 1.06],
   },
   {
     // source: Intervals.icu
