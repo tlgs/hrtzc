@@ -1,6 +1,8 @@
 import { Chart, config, repopulate } from "./modules/chart.js";
 import { Metric, models, calculateZones } from "./modules/models.js";
 
+const mql = window.matchMedia("(min-width: 992px)");
+
 const lthr = document.querySelector("#lthr");
 const maxhr = document.querySelector("#maxhr");
 
@@ -21,8 +23,9 @@ function sync() {
     [Metric.MAXHR, maxhr.valueAsNumber],
   ]);
 
-  repopulate(chart, models.map(m => calculateZones(m, metrics)));
+  repopulate(chart, models.map(m => calculateZones(m, metrics)), !mql.matches);
 }
 
 window.addEventListener("load", sync);
+mql.addEventListener("change", sync);
 document.querySelector("#user-sliders").addEventListener("input", () => { clamp(); sync(); });

@@ -6,42 +6,42 @@ const Metric = Object.freeze({
 const models = [
   {
     // source: strava.com
-    name: "Strava",
+    name: {full: "Strava", short: "Strava"},
     metric: Metric.MAXHR,
-    names: ["Zone 1", "Zone 2", "Zone 3", "Zone 4", "Zone 5"],
+    names: ["Endurance", "Moderate", "Tempo", "Threshold", "Anaerobic"],
     ranges: [.65, .81, .89, .97],
   },
   {
     // source: Suunto Spartan Trainer
-    name: "Suunto",
+    name: {full: "Suunto", short: "Suunto"},
     metric: Metric.MAXHR,
     names: ["Zone 1", "Zone 2", "Zone 3", "Zone 4", "Zone 5"],
     ranges: [.72, .76, .82, .87]
   },
   {
     // source: Intervals.icu
-    name: "Joe Friel",
+    name: {full: "Joe Friel", short: "Joe Friel"},
     metric: Metric.LTHR,
     names: ["Recovery", "Aerobic", "Tempo", "SubThreshold", "SuperThreshold", "Aerobic Capacity", "Anaerobic"],
     ranges: [.85, .90, .95, 1.00, 1.03, 1.06],
   },
   {
     // source: Intervals.icu
-    name: "CTS",
+    name:  {full: "CTS", short: "CTS"},
     metric: Metric.LTHR,
     names: ["Recovery", "Endurance", "Steady State", "Tempo", "Interval"],
     ranges: [.80, .91, .99, 1.06],
   },
   {
     // source: Intervals.icu
-    name: "80/20 Endurance",
+    name: {full: "80/20 Endurance", short: "80/20"},
     metric: Metric.LTHR,
     names: ["Zone 1", "Zone 2", "Zone X", "Zone 3", "Zone Y", "Zone 4", "Zone 5"],
     ranges: [.82, .91, .95, 1.00, 1.02, 1.06],
   },
   {
     // source: Intervals.icu
-    name: "MyProCoach",
+    name: {full: "MyProCoach", short: "MPC"},
     metric: Metric.LTHR,
     names: ["Zone 1", "Zone 2", "Zone 3", "Zone 4", "Zone 5"],
     ranges: [.85, .90, .95, 1.00],

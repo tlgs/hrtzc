@@ -11,13 +11,13 @@ const config = {
   type: "bar",
   data: {
     datasets: [
-      { backgroundColor: "#3db39e99", hoverBackgroundColor: "#3db39eff"},
-      { backgroundColor: "#3db33e99", hoverBackgroundColor: "#3db33eff"},
-      { backgroundColor: "#fcd54999", hoverBackgroundColor: "#fcd549ff"},
-      { backgroundColor: "#fc9c4999", hoverBackgroundColor: "#fc9c49ff"},
-      { backgroundColor: "#e2407399", hoverBackgroundColor: "#e24073ff"},
-      { backgroundColor: "#8963d799", hoverBackgroundColor: "#8963d7ff"},
-      { backgroundColor: "#79738799", hoverBackgroundColor: "#797387ff"},
+      { backgroundColor: "#3db39e99", hoverBackgroundColor: "#3db39eff" },
+      { backgroundColor: "#3db33e99", hoverBackgroundColor: "#3db33eff" },
+      { backgroundColor: "#fcd54999", hoverBackgroundColor: "#fcd549ff" },
+      { backgroundColor: "#fc9c4999", hoverBackgroundColor: "#fc9c49ff" },
+      { backgroundColor: "#e2407399", hoverBackgroundColor: "#e24073ff" },
+      { backgroundColor: "#8963d799", hoverBackgroundColor: "#8963d7ff" },
+      { backgroundColor: "#79738799", hoverBackgroundColor: "#797387ff" },
     ],
   },
   options: {
@@ -52,12 +52,12 @@ const config = {
   },
 };
 
-function repopulate(chart, data) {
-  // clear existing dataset
+function repopulate(chart, data, small) {
+  // clear existing datasets
   chart.data.datasets.forEach(dataset => { dataset.data = [] });
 
   for (const model of data) {
-    const label = `${model.name} (${model.zones.length})`;
+    const label = small ? `${model.name.short}` : `${model.name.full}`;
     const last = model.zones.length - 1;
 
     // repopulate each dataset
