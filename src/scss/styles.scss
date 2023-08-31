@@ -1,0 +1,11 @@
+@import "bootstrap/scss/bootstrap";
+
+#chart-container {
+  min-height: 50vh;
+}
+
+@media (min-width: 992px) {
+  #chart-container {
+    min-height: 40vh;
+  }
+}

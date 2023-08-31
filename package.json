@@ -9,6 +9,16 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "sass": "^1.66.1",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  },
+  "scripts": {
+    "dev": "vite --port=8001 src",
+    "build": "vite build --outDir='../dist' src",
+    "preview": "vite preview --port=8001"
   }
 }

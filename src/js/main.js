@@ -1,5 +1,7 @@
-import { Chart, config, repopulate } from './modules/chart.js';
-import { Metric, models, calculateZones } from './modules/models.js';
+import '../scss/styles.scss';
+
+import { Chart, config, repopulate } from './chart.js';
+import { Metric, models, calculateZones } from './models.js';
 
 const mql = window.matchMedia('(min-width: 992px)');
 
