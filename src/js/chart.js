@@ -1,7 +1,6 @@
-import { Chart, Tooltip, registerables } from 'https://cdn.jsdelivr.net/npm/chart.js@4.3.3/+esm';
+import { Chart, Tooltip, BarController, BarElement, CategoryScale, LinearScale } from 'chart.js';
 
-// <https://github.com/sgratzl/chartjs-chart-wordcloud/issues/4#issuecomment-827304369>
-Chart.register(...registerables);
+Chart.register(BarController, BarElement, CategoryScale, LinearScale, Tooltip);
 Chart.defaults.color = '#212529';
 Chart.defaults.font.family = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
 
