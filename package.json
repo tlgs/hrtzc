@@ -18,8 +18,8 @@
     "chart.js": "^4.4.0"
   },
   "scripts": {
-    "dev": "vite --port=8001 src",
-    "build": "vite build --outDir='../dist' src",
+    "dev": "vite --port=8001",
+    "build": "vite build",
     "preview": "vite preview --port=8001"
   }
 }
