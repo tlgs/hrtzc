@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "vite --port=8001",
     "build": "vite build",
-    "preview": "vite preview --port=8001"
+    "preview": "vite preview --port=8001",
+    "lint": "eslint js/**/*.js --max-warnings 0"
   }
 }
