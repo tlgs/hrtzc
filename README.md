@@ -4,11 +4,15 @@ I'm not a JavaScript wizard.
 
 ## Notes
 
-Lighthouse:
+Hi. It's you from the past. I've added a couple of useful one-liners that are
+available as package scripts - `npm run` to get a list of them.
 
-1. `lighthouse --view http://localhost:8001`
-2. `lighthouse --view --preset=desktop http://localhost:8001`
+- before Vite:
+  - `113KiB` payload
+  - mobile - `1.8s` First Contentful Paint, `170ms` Total Blocking Time
+  - desktop - `0.6s` First Contentful Paint, `20ms` Total Blocking Time
 
-ESLint:
+- after Vite:
+  - ...
 
-1. `npx eslint "**/*.js" --fix`
+Tests using the Lighthouse Firefox plugin (on the GH Pages deployment).

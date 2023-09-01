@@ -19,8 +19,10 @@
   },
   "scripts": {
     "dev": "vite --port=8001 src",
-    "build": "vite build --outDir '../dist' src",
+    "build": "vite build --outDir ../dist src",
     "preview": "vite preview --port=8001",
-    "lint": "eslint js/**/*.js --max-warnings 0"
+    "lint": "eslint --max-warnings 0 js/**/*.js",
+    "lighthouse:mobile": "lighthouse --view http://localhost:8001",
+    "lighthouse:desktop": "lighthouse --view --preset=desktop http://localhost:8001"
   }
 }
