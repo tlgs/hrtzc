@@ -19,10 +19,10 @@
   },
   "scripts": {
     "dev": "vite --port=8001 src",
-    "build": "vite build --outDir ../dist src",
-    "preview": "vite preview --port=8001",
+    "build": "vite build --outDir '../dist' --base '/hrtzc/' src",
+    "preview": "vite preview --port=8002 --base '/hrtzc/'",
     "lint": "eslint --max-warnings 0 src",
-    "lighthouse:mobile": "lighthouse --view http://localhost:8001",
-    "lighthouse:desktop": "lighthouse --view --preset=desktop http://localhost:8001"
+    "lighthouse:mobile": "lighthouse --view http://localhost:8002/hrtzc/",
+    "lighthouse:desktop": "lighthouse --view --preset=desktop http://localhost:8002/hrtzc/"
   }
 }
