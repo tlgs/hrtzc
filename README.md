@@ -13,6 +13,8 @@ available as package scripts - `npm run` to get a list of them.
   - desktop - `0.6s` First Contentful Paint, `20ms` Total Blocking Time
 
 - after Vite:
-  - ...
+  - `73KiB` payload
+  - mobile - `1.5s` First Contentful Paint, `50ms` Total Blocking Time
+  - desktop - `0.5s` First Contentful Paint, `0ms` Total Blocking Time
 
 Tests using the Lighthouse Firefox plugin (on the GH Pages deployment).
