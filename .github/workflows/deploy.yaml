@@ -39,6 +39,9 @@ jobs:
       - name: Build static assets
         run: npm run build
 
+      - name: Remove unused CSS
+        run: npm run purge
+
       - uses: actions/upload-pages-artifact@v2
         with:
           path: './dist'
