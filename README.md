@@ -10,12 +10,14 @@ hrtzc is a simple webpage to quickly compare different _heart rate training zone
 The page is available [here](https://tlgs.github.io/hrtzc/).
 It's built and deployed using GitHub Actions and makes use of GitHub Pages.
 
+## Development
+
 Some useful one-liners are available as package scripts; run `npm run` to see a list.
 
-## Development notes
+### Build tools
 
-Part of this project was bringing in a build tool (Vite)
-to try and improve page performance.
+Part of this project was bringing in a build tool (Vite) to try
+and improve page performance.
 A couple of metrics were recorded before and after restructuring the project
 using the Lighthouse Firefox plugin on the GitHub Pages deployment:
 
@@ -25,21 +27,22 @@ using the Lighthouse Firefox plugin on the GitHub Pages deployment:
 | + Vite     | 73 KiB  | 1.5 s        | 0.5 s         | 50 ms        | 0 ms          |
 | + PurgeCSS | 60 KiB  | 1.3 s        | 0.4 s         | 10 ms        | 0 ms          |
 
-**Edit**: It turns out there's a lot of _building_ that Vite is not doing --
-I achieved an 89% size reduction in the CSS bundle by using PurgeCSS (see d4a59ff).
+However, it turns out there's a lot of _building_ that Vite is not doing --
+I achieved an 89% size reduction in the CSS bundle by using PurgeCSS
+(see [d4a59ff](https://github.com/tlgs/hrtzc/commit/d4a59ff81bbe188cf9e54d8d83a7bf65fef39501)).
 
-Some thoughts on the stack:
+### Notes on the stack
 
-  - Popularity -
-    I'm not a web developer (and have no interest in becoming one)
-    so I chose Bootstrap and Vite because they are popular and look like will be
-    around for a while.
-    I had an OK time figuring out Bootstrap's _mobile-first_ approach,
-    and I don't have enough experience with web build tools to tell if Vite was
-    the right choice.
-  - Power and comfort -
-    I would have _loved_ to use this project to learn D3: it's a simple stacked
-    horizontal bar chart and the dataset recalculation is trivial.
-    Still, I felt like I would need to invest a decent chunk of time before I could
-    produce something even close to what Chart.js offers out-of-the-box.
-    I instead chose to experiment with another part of my toolbox.
+- Popularity -
+  I'm not a web developer (and have no interest in becoming one)
+  so I chose Bootstrap and Vite because they are popular and look like will be
+  around for a while.
+  I had an OK time figuring out Bootstrap's _mobile-first_ approach,
+  and I don't have enough experience with web build tools to tell if Vite was
+  the right choice.
+- Power and comfort -
+  I would have _loved_ to use this project to learn D3: it's a simple stacked
+  horizontal bar chart and the dataset recalculation is trivial.
+  Still, I felt like I would need to invest a decent chunk of time before I could
+  produce something even close to what Chart.js offers out-of-the-box.
+  I instead chose to experiment with another part of my toolbox.
