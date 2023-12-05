@@ -1,9 +1,9 @@
 # hrtzc
 
-hrtzc is a simple webpage to quickly compare different _heart rate training zones_ models:
+hrtzc is a simple webpage to quickly compare different _heart rate training zones_ models.
 
-  - experiment with mobile-first page design
-  - modern web dev tooling instead of dropping a couple of CDN `script` tags
+- experiment with mobile-first page design
+- modern web dev tooling instead of dropping a couple of CDN `script` tags
 
 ## Usage
 
@@ -19,10 +19,14 @@ to try and improve page performance.
 A couple of metrics were recorded before and after restructuring the project
 using the Lighthouse Firefox plugin on the GitHub Pages deployment:
 
-|        | Payload | FCP (mobile) | FCP (desktop) | TBT (mobile) | TBT (desktop) |
-| ------ | ------- | ------------ | ------------- | ------------ | ------------- |
-| before | 113 KiB | 1.8 s        | 0.6 s         | 170 ms       | 20 ms         |
-| after  | 73 KiB  | 1.5 s        | 0.5 s         | 50 ms        | 0 ms          |
+|            | Payload | FCP (mobile) | FCP (desktop) | TBT (mobile) | TBT (desktop) |
+| ---------- | ------- | ------------ | ------------- | ------------ | ------------- |
+| before     | 113 KiB | 1.8 s        | 0.6 s         | 170 ms       | 20 ms         |
+| + Vite     | 73 KiB  | 1.5 s        | 0.5 s         | 50 ms        | 0 ms          |
+| + PurgeCSS | 60 KiB  | 1.3 s        | 0.4 s         | 10 ms        | 0 ms          |
+
+**Edit**: It turns out there's a lot of _building_ that Vite is not doing --
+I achieved an 89% size reduction in the CSS bundle by using PurgeCSS (see d4a59ff).
 
 Some thoughts on the stack:
 
