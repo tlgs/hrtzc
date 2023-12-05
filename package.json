@@ -20,10 +20,10 @@
     "chart.js": "^4.4.0"
   },
   "scripts": {
-    "dev": "vite --port=8001 src",
-    "build": "vite build --outDir '../dist' --base '/hrtzc/' src",
-    "purge": "purgecss --css dist/assets/*.css --content dist/index.html dist/assets/*.js --output dist/assets",
-    "preview": "vite preview --port=8002 --base '/hrtzc/'",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "purge": "purgecss --css 'dist/assets/*.css' --content 'dist/**/*.!(css)' --output 'dist/assets'",
     "lint": "eslint --max-warnings 0 src",
     "lighthouse:mobile": "lighthouse --view http://localhost:8002/hrtzc/",
     "lighthouse:desktop": "lighthouse --view --preset=desktop http://localhost:8002/hrtzc/"
