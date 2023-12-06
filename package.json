@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "Tiago Seabra",
   "license": "Unlicense",
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.48.0",
     "eslint-config-semistandard": "^17.0.0",
