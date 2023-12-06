@@ -1,4 +1,5 @@
 import path from 'path';
+import purgecss from '@fullhuman/postcss-purgecss';
 
 export default {
   root: path.resolve(__dirname, 'src'),
@@ -14,5 +15,14 @@ export default {
   },
   esbuild: {
     legalComments: 'none'
+  },
+  css: {
+    postcss: {
+      plugins: [
+        purgecss({
+          content: ['./**/*.html']
+        })
+      ]
+    }
   }
 };

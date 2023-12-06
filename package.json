@@ -5,13 +5,13 @@
   "license": "Unlicense",
   "type": "module",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "eslint": "^8.48.0",
     "eslint-config-semistandard": "^17.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
-    "purgecss": "^5.0.0",
     "sass": "^1.66.1",
     "vite": "^4.4.9",
     "vite-bundle-visualizer": "^0.11.0"
@@ -24,7 +24,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "purge": "purgecss --css 'dist/assets/*.css' --content 'dist/**/*.!(css)' --output 'dist/assets'",
     "lint": "eslint --max-warnings 0 src",
     "lighthouse:mobile": "lighthouse --view http://localhost:8002/hrtzc/",
     "lighthouse:desktop": "lighthouse --view --preset=desktop http://localhost:8002/hrtzc/"
