@@ -1,7 +1,7 @@
-import { resolve } from 'node:path';
+import path from 'path';
 
 export default {
-  root: resolve(__dirname, 'src'),
+  root: path.resolve(__dirname, 'src'),
   base: '/hrtzc/',
   server: {
     port: 8001
