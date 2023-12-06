@@ -24,12 +24,11 @@ using the Lighthouse Firefox plugin on the GitHub Pages deployment:
 |            | Payload | FCP (mobile) | FCP (desktop) | TBT (mobile) | TBT (desktop) |
 | ---------- | ------- | ------------ | ------------- | ------------ | ------------- |
 | before     | 113 KiB | 1.8 s        | 0.6 s         | 170 ms       | 20 ms         |
-| + Vite     | 73 KiB  | 1.5 s        | 0.5 s         | 50 ms        | 0 ms          |
+| Vite       | 73 KiB  | 1.5 s        | 0.5 s         | 50 ms        | 0 ms          |
 | + PurgeCSS | 60 KiB  | 1.3 s        | 0.4 s         | 10 ms        | 0 ms          |
 
 However, it turns out there's a lot of _building_ that Vite is not doing --
-I achieved an 89% size reduction in the CSS bundle by using PurgeCSS
-(see [d4a59ff](https://github.com/tlgs/hrtzc/commit/d4a59ff81bbe188cf9e54d8d83a7bf65fef39501)).
+I achieved an 89% size reduction of the CSS bundle by using PurgeCSS.
 
 ### Notes on the stack
 
