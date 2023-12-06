@@ -24,7 +24,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --max-warnings 0 src",
+    "lint": "eslint --max-warnings 0 *.js *.cjs src",
     "lighthouse:mobile": "lighthouse --view http://localhost:8002/hrtzc/",
     "lighthouse:desktop": "lighthouse --view --preset=desktop http://localhost:8002/hrtzc/"
   }
