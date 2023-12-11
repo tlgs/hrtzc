@@ -14,6 +14,26 @@ It's built and deployed using GitHub Actions and makes use of GitHub Pages.
 
 Some useful one-liners are available as package scripts; run `npm run` to see a list.
 
+### Notes on the stack
+
+Built with [Chart.js](https://www.chartjs.org/),
+[Bootstrap](https://getbootstrap.com/),
+and [Vite](https://vitejs.dev/) + [PurgeCSS](https://purgecss.com/).
+
+- Popularity -
+  I'm not a web developer (and have no interest in becoming one)
+  so I chose Bootstrap and Vite because they are popular and look like will be
+  around for a while.
+  I had an OK time figuring out Bootstrap's _mobile-first_ approach,
+  and I don't have enough experience with web build tools to tell if Vite was
+  the right choice.
+- Power and comfort -
+  I would have _loved_ to use this project to learn D3: it's a simple stacked
+  horizontal bar chart and the dataset recalculation is trivial.
+  Still, I felt like I would need to invest a decent chunk of time before I could
+  produce something even close to what Chart.js offers out-of-the-box.
+  I instead chose to experiment with another part of my toolbox.
+
 ### Build tools
 
 Part of this project was bringing in a build tool (Vite) to try
@@ -29,19 +49,3 @@ using the Lighthouse Firefox plugin on the GitHub Pages deployment:
 
 However, it turns out there's a lot of _building_ that Vite is not doing --
 I achieved an 89% size reduction of the CSS bundle by using PurgeCSS.
-
-### Notes on the stack
-
-- Popularity -
-  I'm not a web developer (and have no interest in becoming one)
-  so I chose Bootstrap and Vite because they are popular and look like will be
-  around for a while.
-  I had an OK time figuring out Bootstrap's _mobile-first_ approach,
-  and I don't have enough experience with web build tools to tell if Vite was
-  the right choice.
-- Power and comfort -
-  I would have _loved_ to use this project to learn D3: it's a simple stacked
-  horizontal bar chart and the dataset recalculation is trivial.
-  Still, I felt like I would need to invest a decent chunk of time before I could
-  produce something even close to what Chart.js offers out-of-the-box.
-  I instead chose to experiment with another part of my toolbox.
