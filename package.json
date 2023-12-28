@@ -13,8 +13,7 @@
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "sass": "^1.66.1",
-    "vite": "^4.4.9",
-    "vite-bundle-visualizer": "^0.11.0"
+    "vite": "^4.4.9"
   },
   "dependencies": {
     "bootstrap": "^5.3.1",
