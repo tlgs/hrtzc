@@ -14,27 +14,29 @@ It's built and deployed using GitHub Actions and makes use of GitHub Pages.
 
 Some useful one-liners are available as package scripts; run `npm run` to see a list.
 
-### Notes on the stack
+### Tech stack
 
 Built with [Chart.js](https://www.chartjs.org/),
 [Bootstrap](https://getbootstrap.com/),
 and [Vite](https://vitejs.dev/) + [PurgeCSS](https://purgecss.com/).
 
+Some notes on how I arrived at this combination:
+
 - Popularity -
   I'm not a web developer (and have no interest in becoming one)
   so I chose Bootstrap and Vite because they are popular and look like will be
   around for a while.
-  I had an OK time figuring out Bootstrap's _mobile-first_ approach,
+  I had an OK time figuring out Bootstrap's _mobile-first approach_,
   and I don't have enough experience with web build tools to tell if Vite was
   the right choice.
 - Power and comfort -
   I would have _loved_ to use this project to learn D3: it's a simple stacked
   horizontal bar chart and the dataset recalculation is trivial.
   Still, I felt like I would need to invest a decent chunk of time before I could
-  produce something even close to what Chart.js offers out-of-the-box.
+  produce something close to what Chart.js offers out-of-the-box.
   I instead chose to experiment with another part of my toolbox.
 
-### Build tools
+### Web build tools
 
 Part of this project was bringing in a build tool (Vite) to try
 and improve page performance.
