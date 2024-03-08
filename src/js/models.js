@@ -5,18 +5,18 @@ const Metric = Object.freeze({
 
 const models = [
   {
-    // source: strava.com
-    name: { full: 'Strava', short: 'Strava' },
-    metric: Metric.MAXHR,
-    names: ['Endurance', 'Moderate', 'Tempo', 'Threshold', 'Anaerobic'],
-    ranges: [0.65, 0.81, 0.89, 0.97]
-  },
-  {
     // source: Suunto Spartan Trainer
     name: { full: 'Suunto', short: 'Suunto' },
     metric: Metric.MAXHR,
     names: ['Zone 1', 'Zone 2', 'Zone 3', 'Zone 4', 'Zone 5'],
     ranges: [0.72, 0.76, 0.82, 0.87]
+  },
+  {
+    // source: strava.com
+    name: { full: 'Strava', short: 'Strava' },
+    metric: Metric.MAXHR,
+    names: ['Endurance', 'Moderate', 'Tempo', 'Threshold', 'Anaerobic'],
+    ranges: [0.65, 0.81, 0.89, 0.97]
   },
   {
     // source: Intervals.icu
