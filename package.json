@@ -1,8 +1,8 @@
 {
   "name": "hrtzc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Tiago Seabra",
-  "license": "Unlicense",
+  "license": "0BSD",
   "type": "module",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
